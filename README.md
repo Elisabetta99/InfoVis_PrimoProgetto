@@ -1,4 +1,4 @@
-# Primo Progetto
+# Primo Progetto InfoVis
 Questo repository contiene il primo progetto del corso di Visualizzazione delle Informazioni *A.A. 2022/2023*.
 Per la realizzazione del progetto sono stati utilizzati: **JavaScript** e **D3.js**
 
