@@ -1,0 +1,75 @@
+{
+    "data": [
+      {
+        "variabile1": 2,
+        "variabile2": 4,
+        "variabile3": 6,
+        "variabile4": 8,
+        "variabile5": 1
+      },
+      {
+        "variabile1": 5,
+        "variabile2": 3,
+        "variabile3": 9,
+        "variabile4": 4,
+        "variabile5": 0.6
+      },
+      {
+        "variabile1": 8,
+        "variabile2": 6,
+        "variabile3": 4,
+        "variabile4": 7,
+        "variabile5": 0.8
+      },
+      {
+        "variabile1": 12,
+        "variabile2": 9,
+        "variabile3": 2,
+        "variabile4": 5,
+        "variabile5": 0.4
+      },
+      {
+        "variabile1": 7,
+        "variabile2": 11,
+        "variabile3": 3,
+        "variabile4": 6,
+        "variabile5": 0.1
+      },
+      {
+        "variabile1": 4,
+        "variabile2": 7,
+        "variabile3": 5,
+        "variabile4": 9,
+        "variabile5": 0.7
+      },
+      {
+        "variabile1": 3,
+        "variabile2": 5,
+        "variabile3": 8,
+        "variabile4": 3,
+        "variabile5": 0.3
+      },
+      {
+        "variabile1": 9,
+        "variabile2": 1,
+        "variabile3": 7,
+        "variabile4": 2,
+        "variabile5": 0.9
+      },
+      {
+        "variabile1": 6,
+        "variabile2": 8,
+        "variabile3": 1,
+        "variabile4": 7,
+        "variabile5": 0.5
+      },
+      {
+        "variabile1": 12,
+        "variabile2": 6,
+        "variabile3": 9,
+        "variabile4": 4,
+        "variabile5": 0.2
+      }
+    ]
+  }
+  
