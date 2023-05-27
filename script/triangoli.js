@@ -84,7 +84,7 @@ d3.json("data/data.json").then(function(data) {
   }
 
   // Aggiunta dell'evento di click ai triangoli
-  svg.selectAll("polygon")
+  svg.selectAll("polygon") 
     .on("click", function(d) {
       var triangolo = d3.select(this);
 
