@@ -84,18 +84,34 @@ d3.json("data/data.json").then(function(data) {
   }
 
   // Aggiunta dell'evento di click ai triangoli
-  svg.selectAll("polygon") 
-    .on("click", function(d) {
-      var triangolo = d3.select(this);
+  svg.selectAll("polygon")
+  .on("click", function(d) {
+    var triangolo = d3.select(this);
 
-      if (!triangoloTrasparente) {
-        renderTrasparente(triangolo);
-        triangoloTrasparente = triangolo;
-      } else {
-        ripristinaColore(triangoloTrasparente);
-        scambiaValori(triangolo, triangoloTrasparente);
-        triangoloTrasparente = null;
-      }
-    });
+    if (!triangoloTrasparente) {
+      renderTrasparente(triangolo);
+      triangoloTrasparente = triangolo;
+    } else if (triangoloTrasparente !== triangolo) {
+      scambiaValori(triangolo, triangoloTrasparente);
+      ripristinaColore(triangoloTrasparente);
+      triangoloTrasparente = null;
+      
+       // Aggiornamento delle dimensioni dei triangoli
+       svg.selectAll("polygon")
+       .attr("points", function(d) {
+         var x = xScale(d.variabile1);
+         var y = yScale(d.variabile2);
+         var base = baseScale(d.variabile3);
+         var height = heightScale(d.variabile4);
+
+         var point1 = [x, y];
+         var point2 = [x - base / 2, y + height];
+         var point3 = [x + base / 2, y + height];
+
+         return point1.join(",") + " " + point2.join(",") + " " + point3.join(",");
+       });
+       
+    }
+  });
 
 });
