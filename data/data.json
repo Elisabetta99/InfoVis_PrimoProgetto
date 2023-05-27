@@ -1,75 +1,72 @@
-{
-    "data": [
-      {
-        "variabile1": 2,
-        "variabile2": 4,
-        "variabile3": 6,
-        "variabile4": 8,
-        "variabile5": 1
-      },
-      {
-        "variabile1": 5,
-        "variabile2": 3,
-        "variabile3": 9,
-        "variabile4": 4,
-        "variabile5": 0.6
-      },
-      {
-        "variabile1": 8,
-        "variabile2": 6,
-        "variabile3": 4,
-        "variabile4": 7,
-        "variabile5": 0.8
-      },
-      {
-        "variabile1": 12,
-        "variabile2": 9,
-        "variabile3": 2,
-        "variabile4": 5,
-        "variabile5": 0.4
-      },
-      {
-        "variabile1": 7,
-        "variabile2": 11,
-        "variabile3": 3,
-        "variabile4": 6,
-        "variabile5": 0.1
-      },
-      {
-        "variabile1": 4,
-        "variabile2": 7,
-        "variabile3": 5,
-        "variabile4": 9,
-        "variabile5": 0.7
-      },
-      {
-        "variabile1": 3,
-        "variabile2": 5,
-        "variabile3": 8,
-        "variabile4": 3,
-        "variabile5": 0.3
-      },
-      {
-        "variabile1": 9,
-        "variabile2": 1,
-        "variabile3": 7,
-        "variabile4": 2,
-        "variabile5": 0.9
-      },
-      {
-        "variabile1": 6,
-        "variabile2": 8,
-        "variabile3": 1,
-        "variabile4": 7,
-        "variabile5": 0.5
-      },
-      {
-        "variabile1": 12,
-        "variabile2": 6,
-        "variabile3": 9,
-        "variabile4": 4,
-        "variabile5": 0.2
-      }
-    ]
+[
+  {
+    "variabile1": 100,
+    "variabile2": 200,
+    "variabile3": 50,
+    "variabile4": 80,
+    "variabile5": 300
+  },
+  {
+    "variabile1": 300,
+    "variabile2": 600,
+    "variabile3": 70,
+    "variabile4": 120,
+    "variabile5": 200
+  },
+  {
+    "variabile1": 500,
+    "variabile2": 500,
+    "variabile3": 90,
+    "variabile4": 60,
+    "variabile5": 280
+  },
+  {
+    "variabile1": 700,
+    "variabile2": 200,
+    "variabile3": 80,
+    "variabile4": 100,
+    "variabile5": 40
+  },
+  {
+    "variabile1": 900,
+    "variabile2": 400,
+    "variabile3": 60,
+    "variabile4": 70,
+    "variabile5": 160
+  },
+  {
+    "variabile1": 150,
+    "variabile2": 800,
+    "variabile3": 40,
+    "variabile4": 90,
+    "variabile5": 240
+  },
+  {
+    "variabile1": 350,
+    "variabile2": 300,
+    "variabile3": 80,
+    "variabile4": 50,
+    "variabile5": 80
+  },
+  {
+    "variabile1": 550,
+    "variabile2": 100,
+    "variabile3": 100,
+    "variabile4": 110,
+    "variabile5": 320
+  },
+  {
+    "variabile1": 550,
+    "variabile2": 800,
+    "variabile3": 70,
+    "variabile4": 80,
+    "variabile5": 60
+  },
+  {
+    "variabile1": 250,
+    "variabile2": 100,
+    "variabile3": 90,
+    "variabile4": 60,
+    "variabile5": 120
   }
-  
+]
