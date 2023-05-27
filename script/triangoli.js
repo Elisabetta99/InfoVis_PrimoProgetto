@@ -55,7 +55,7 @@ d3.json("data/data.json").then(function (data) {
       return point1.join(",") + " " + point2.join(",") + " " + point3.join(",");
     })
     .style("fill", function (d) {
-      // Colore del triangolo
+      // Colore HSL del triangolo
       return d3.hsl(d.variabile5, 1, 0.5);
     })
     .style("stroke", "black");
