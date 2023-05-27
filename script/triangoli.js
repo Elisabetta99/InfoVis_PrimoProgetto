@@ -4,32 +4,33 @@ var width = 1000 - margin.left - margin.right;
 var height = 700 - margin.top - margin.bottom;
 
 // Creazione dell'elemento SVG
-var svg = d3
-  .select("body")
+var svg = d3.select("body")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom);
 
 // Caricamento dei dati dal file JSON
 d3.json("data/data.json").then(function (data) {
+  
   // Definizione delle scale per le variabili
-  var xScale = d3
-    .scaleLinear()
+
+  // Scala per la variabile x
+  var xScale = d3.scaleLinear()
     .domain([0, d3.max(data, function (d) { return d.variabile1; })])
     .range([150, width - 150]);
 
-  var yScale = d3
-    .scaleLinear()
+  // Scala per la variabile y
+  var yScale = d3.scaleLinear()
     .domain([0, d3.max(data, function (d) { return d.variabile2; })])
     .range([150, height - 150]);
 
-  var baseScale = d3
-    .scaleLinear()
+  // Scala per la base del triangolo
+  var baseScale = d3.scaleLinear()
     .domain([0, d3.max(data, function (d) { return d.variabile3; })])
     .range([10, 100]);
 
-  var heightScale = d3
-    .scaleLinear()
+  // Scala per l'altezza del triangolo
+  var heightScale = d3.scaleLinear()
     .domain([0, d3.max(data, function (d) { return d.variabile4; })])
     .range([10, 100]);
 
@@ -40,6 +41,8 @@ d3.json("data/data.json").then(function (data) {
     .enter()
     .append("polygon")
     .attr("points", function (d) {
+
+      // Calcolo dei punti del triangolo isoscele
       var x = xScale(d.variabile1);
       var y = yScale(d.variabile2);
       var base = baseScale(d.variabile3);
@@ -52,6 +55,7 @@ d3.json("data/data.json").then(function (data) {
       return point1.join(",") + " " + point2.join(",") + " " + point3.join(",");
     })
     .style("fill", function (d) {
+      // Colore del triangolo
       return d3.hsl(d.variabile5, 1, 0.5);
     })
     .style("stroke", "black");
@@ -71,6 +75,7 @@ d3.json("data/data.json").then(function (data) {
 
   // Funzione per scambiare i valori delle variabili tra due triangoli
   function scambiaValori(triangolo1, triangolo2) {
+    
     var variabili1 = {
       base: triangolo1.data()[0].variabile3,
       altezza: triangolo1.data()[0].variabile4,
@@ -88,7 +93,7 @@ d3.json("data/data.json").then(function (data) {
     triangolo2.data()[0].variabile4 = variabili1.altezza;
   }
 
-  // Aggiunta dell'evento di click ai triangoli
+// Aggiunta dell'evento di click ai triangoli
 svg.selectAll("polygon").on("click", function (d) {
     var triangolo = d3.select(this);
   
@@ -98,11 +103,13 @@ svg.selectAll("polygon").on("click", function (d) {
     } else if (triangoloTrasparente !== triangolo) {
       scambiaValori(triangolo, triangoloTrasparente);
   
-      // Aggiornamento delle dimensioni dei triangoli con animazione
+      // Aggiornamento delle dimensioni dei triangoli con animazione fluida
       triangles
         .transition()
         .duration(500)
         .attr("points", function (d) {
+        
+          // Calcola i nuovi punti del triangolo dopo lo scambio di variabili
           var x = xScale(d.variabile1);
           var y = yScale(d.variabile2);
           var base = baseScale(d.variabile3);
@@ -115,10 +122,11 @@ svg.selectAll("polygon").on("click", function (d) {
           return point1.join(",") + " " + point2.join(",") + " " + point3.join(",");
         })
         .on("end", function () {
+          // Alla fine ripristina il colore del triangolo
           ripristinaColore(triangoloTrasparente);
           triangoloTrasparente = null;
         });
     }
   });
-  
+
 });
