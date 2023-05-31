@@ -1,7 +1,7 @@
 // Dimensioni dell'area di disegno e dei margini
 var margin = { top: 10, right: 10, bottom: 10, left: 10 };
-var width = 1000 - margin.left - margin.right;
-var height = 700 - margin.top - margin.bottom;
+var width = 1400 - margin.left - margin.right;
+var height = 600 - margin.top - margin.bottom;
 
 // Creazione dell'elemento SVG
 var svg = d3.select("body")
