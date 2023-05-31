@@ -15,4 +15,7 @@ Variabili:
 Facendo click con il pulsante sinistro su un triangolo questo diventa trasparente. Facendo click su un secondo triangolo questo scambia i valori delle variabili (con l'eccezione della x e della y e del colore) con quelle del triangolo trasparente (che ritorna ad essere colorato). 
 Fare in modo che i cambi di dimensioni dei triangoli avvengano con un'animazione fluida. 
 
-Usare le scale d3.js per mappare l'intervallo dei valori delle variabili (che deve essere arbitrario) sull'intervallo dei valori delle coordinate, che dipende dall'interfaccia
+
+**Demo:**
+![Demo Progetto InfoVis](https://github.com/Elisabetta99/InfoVis_PrimoProgetto/blob/main/demo/Demo.gif)
+
