@@ -16,6 +16,6 @@ Facendo click con il pulsante sinistro su un triangolo questo diventa trasparent
 Fare in modo che i cambi di dimensioni dei triangoli avvengano con un'animazione fluida. 
 
 
-**Demo:**
+## Demo:
 ![Demo Progetto InfoVis](https://github.com/Elisabetta99/InfoVis_PrimoProgetto/blob/main/demo/Demo.gif)
 
